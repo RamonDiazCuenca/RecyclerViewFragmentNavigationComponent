@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/inicioFragment">
+
+    <fragment
+        android:id="@+id/inicioFragment"
+        android:name="com.rdc.recyclerviewfragmentnavigationcomponent.InicioFragment"
+        android:label="fragment_inicio"
+        tools:layout="@layout/fragment_inicio" >
+        <action
+            android:id="@+id/action_inicioFragment_to_museosFragment"
+            app:destination="@id/museosFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/museosFragment"
+        android:name="com.rdc.recyclerviewfragmentnavigationcomponent.MuseosFragment"
+        android:label="fragment_museos"
+        tools:layout="@layout/fragment_museos" />
+</navigation>
